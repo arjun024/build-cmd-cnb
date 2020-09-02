@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eu
+if [ ! -f build_cmd.sh ]; then
+    echo "Unable to find $(pwd)/some-file"
+    exit 1
+fi
+
+echo Running script build_cmd.sh
+chmod +x build_cmd.sh
+exec ./build_cmd.sh
