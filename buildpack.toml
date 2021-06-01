@@ -6,7 +6,7 @@ api = "0.2"
   version = "1.0.0"
 
 [metadata]
-  include_files = ["bin/build", "bin/detect", "buildpack.toml"]
+  include-files = ["bin/build", "bin/detect", "buildpack.toml"]
 
 [[stacks]]
   id = "io.buildpacks.stacks.bionic"

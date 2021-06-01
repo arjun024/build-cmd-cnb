@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -eu
 if [ ! -f build_cmd.sh ]; then
-    echo "Unable to find $(pwd)/some-file"
-    exit 1
+    echo "**FAIL**: Unable to find $(pwd)/build_cmd.sh"
+    echo "Skipping buildpack"
+    exit 0
 fi
 
 echo Running script build_cmd.sh
